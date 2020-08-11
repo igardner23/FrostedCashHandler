@@ -1,4 +1,5 @@
 from django.db import models
+from users.models import Employee
 from simple_history.models import HistoricalRecords
 
 
@@ -15,3 +16,4 @@ class Store(models.Model):
 
 class Order(models.Model):
     order_id = models.IntegerField()
+    
